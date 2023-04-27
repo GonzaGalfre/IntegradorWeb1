@@ -1,0 +1,53 @@
+:root {
+    --main-color:  
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.container {
+   width: 80%;
+   margin: 0 auto;
+   background-color: #fff;
+   margin-top: 30px;
+   padding: 40px;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+  
+
+nav {
+    background-color: #333;
+    height: 50px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav ul li {
+    height: 100%;
+  }
+  
+  nav ul li a {
+    display: block;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 50px;
+  }
+  
