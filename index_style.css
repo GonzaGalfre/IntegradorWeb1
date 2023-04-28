@@ -3,6 +3,10 @@
     --secondary-color:
     --third-color:
 }
+@font-face {
+  font-family: roboto;
+  src: url(fonts/Roboto-Light.ttf)
+}
 
 html {
     box-sizing: border-box;
@@ -37,6 +41,7 @@ html {
   margin: 0;
   text-align: center;
   line-height: 70px;
+  font-family: roboto, sans-serif;
 }
 
 
@@ -71,6 +76,7 @@ nav {
   padding: 0 20px;
   line-height: 50px;
   font-size: 25px;
+  font-family: roboto, sans-serif;
 }
 
   
@@ -142,6 +148,7 @@ nav {
   font-size: 50px;
   line-height: 330px;
   transition: font-size 0.25s ease-out;
+  font-family: roboto, sans-serif;
 }
 .transparent-bar {
   width: 100%;
