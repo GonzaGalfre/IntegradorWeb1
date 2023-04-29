@@ -83,7 +83,7 @@ nav {
 .grid-container { 
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 31.2%);
   grid-gap: 50px;
 }
 /*
@@ -108,8 +108,8 @@ nav {
   background-repeat: no-repeat;
 }
 .imagen-queso {
-  width: 500px;
-  height: 500px;
+  width: 425px;
+  height: 425px;
   overflow: hidden;
   background-repeat:space;
   background-position: center;
@@ -146,7 +146,7 @@ nav {
   margin: auto;
   padding: 10px;
   font-size: 50px;
-  line-height: 330px;
+  line-height: 190px;
   transition: font-size 0.25s ease-out;
   font-family: roboto, sans-serif;
 }
@@ -154,7 +154,7 @@ nav {
   width: 100%;
   height: 20%;
   margin-top: 275px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, .35);
 }
 
 .queso-p:hover {
