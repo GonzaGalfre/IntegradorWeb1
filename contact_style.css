@@ -1,0 +1,133 @@
+:root {
+    --main-color:   
+    --secondary-color:
+    --third-color:
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(fonts/Roboto-Light.ttf)
+}
+
+html {
+    box-sizing: border-box;
+    background: rgb(209,208,222);
+    background: radial-gradient(circle, rgba(209,208,222,1) 0%, rgba(244,244,244,1) 83%, rgba(242,242,242,1) 100%);
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.container {
+   width: 80%;
+   margin: 0 auto;
+   background-color: rgb(243, 242, 242);
+   margin-top: 30px;
+   padding: 40px;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.top-bar {
+  height: 70px;
+  background-color: #333;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+}
+.top-bar-text {
+  color: #fff;
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  line-height: 70px;
+  font-family: roboto, sans-serif;
+}
+
+
+nav {
+    background-color: #333;
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav ul li {
+    height: 100%;
+  }
+  
+.navbar-item {
+  display: block;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 50px;
+  font-size: 25px;
+  font-family: roboto, sans-serif;
+}
+.carousel {
+    width: 100%;
+    height: 500px;
+    background-image: url("images/editedmap.png");
+    margin-bottom: 40px;
+     
+}
+
+ 
+ form {
+    max-width: 100%;
+    text-align: center;
+    margin: 20px auto;
+ }
+   
+    input, textarea {
+      border:0; outline:0;
+      padding: 1em;
+      border-radius: 8px;
+      display: block;
+      width: 100%;
+      margin-top: 1em;
+      font-family: 'Merriweather', sans-serif;
+      box-shadow: 0 1px 1px rgba(black, 0.1);
+      resize: none;
+    }
+     
+   
+   #input-submit {
+      color: white; 
+      background: red;
+      cursor: pointer;
+     
+   }
+   
+   textarea {
+       height: 126px;
+   }
+ 
+ 
+ 
+ .half {
+   float: left;
+   width: 48%;
+   margin-bottom: 1em;
+ }
+ 
+ .right { width: 50%; }
+ 
+ .left {
+      margin-right: 2%; 
+ }
