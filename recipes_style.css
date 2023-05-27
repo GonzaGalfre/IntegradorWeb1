@@ -1,7 +1,5 @@
 :root {
-    --main-color:   
-    --secondary-color:
-    --third-color:
+    --yellow:#f1f73c;
 }
 @font-face {
   font-family: roboto;
@@ -28,15 +26,15 @@ html {
 }
 .top-bar {
   height: 70px;
-  background-color: #333;
+  background-color: var(--yellow);
   width: 80%;
   margin: auto;
   margin-bottom: 10px;
   border-radius: 10px;
-
+  border: 2px solid black;
 }
 .top-bar-text {
-  color: #fff;
+  color: #000000;
   font-size: 50px;
   margin: 0;
   text-align: center;
@@ -46,12 +44,12 @@ html {
 
 
 nav {
-    background-color: #333;
+    background-color: var(--yellow);
     height: 50px;
     width: 80%;
     margin: auto;
     border-radius: 10px;
-
+    border: 2px solid black;
   }
   
   nav ul {
@@ -71,7 +69,7 @@ nav {
 .navbar-item {
   display: block;
   height: 100%;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   padding: 0 20px;
   line-height: 50px;
@@ -83,10 +81,11 @@ nav {
     height: 600px;
     background-color: #333;
     margin-bottom: 40px;
+    border: 2px solid black;
 }
 #carousel img {
-  width: 75%;
-  height: 600px;
+  width: 74.8%;
+  height: 596px;
   position: absolute;
   overflow: hidden;
   top: 10;
@@ -99,6 +98,7 @@ nav {
 }
 
 .receta {
+  background-color: white;
     margin-bottom: 20px;
     overflow: auto;
     border: 2px solid black;
@@ -107,6 +107,7 @@ nav {
   }
   .receta:hover {
     transform: scale(1.02);
+    background-color: var(--yellow);
   }
   .receta a {
     color: inherit;
