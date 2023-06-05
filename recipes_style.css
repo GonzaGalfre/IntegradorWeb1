@@ -104,6 +104,7 @@ nav {
     border: 2px solid black;
     border-radius: 20px;
     transition: transform 0.2s ease-in-out;
+    font-family: roboto;
   }
   .receta:hover {
     transform: scale(1.02);

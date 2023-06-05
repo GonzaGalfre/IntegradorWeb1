@@ -10,42 +10,51 @@ document.getElementById('input-submit').addEventListener('click', function(event
     var phonePattern = /^\d{10}$/;
     var isValid = true;
 
+    var errorContainer = document.getElementById('error-container');
+    errorContainer.innerHTML = ''; // Clear previous error messages
+
     if (name.trim() === '') {
-        alert('Por favor, ingrese su nombre.');
+        var error = document.createElement('p');
+        error.textContent = 'Por favor, ingrese su nombre.';
+        errorContainer.appendChild(error);
         isValid = false;
-        return;
     }
 
     if (email.trim() === '') {
-        alert('Por favor, ingrese su email.');
+        var error = document.createElement('p');
+        error.textContent = 'Por favor, ingrese su email.';
+        errorContainer.appendChild(error);
         isValid = false;
-        return;
-    }
-
-    if (!emailPattern.test(email)) {
-        alert('Por favor, ingrese un email valido.');
+    } else if (!emailPattern.test(email)) {
+        var error = document.createElement('p');
+        error.textContent = 'Por favor, ingrese un email válido.';
+        errorContainer.appendChild(error);
         isValid = false;
-        return;
     }
 
     if (subject.trim() === '') {
-        alert('Por favor, ingrese un numero de telefono.');
+        var error = document.createElement('p');
+        error.textContent = 'Por favor, ingrese un número de teléfono.';
+        errorContainer.appendChild(error);
         isValid = false;
-        return;
-    } else if(!phonePattern.test(subject)){
-        alert('Por favor, ingrese un numero de telefono valido. (10 numeros)')
+    } else if (!phonePattern.test(subject)) {
+        var error = document.createElement('p');
+        error.textContent = 'Por favor, ingrese un número de teléfono válido. (10 números)';
+        errorContainer.appendChild(error);
         isValid = false;
     }
 
     if (message.trim() === '') {
-        alert('Por favor, ingrese un mensaje.');
+        var error = document.createElement('p');
+        error.textContent = 'Por favor, ingrese un mensaje.';
+        errorContainer.appendChild(error);
         isValid = false;
-        return;
     }
 
-    if(isValid){
-        alert('Gracias! Nos estaremos contactando con usted');
+    if (isValid) {
+        var successMessage = document.createElement('p');
+        successMessage.textContent = '¡Gracias! Nos estaremos contactando con usted';
+        errorContainer.appendChild(successMessage);
         document.querySelector('form').submit();
     }
-    
 });
